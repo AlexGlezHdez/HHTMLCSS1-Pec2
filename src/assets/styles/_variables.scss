@@ -1,0 +1,22 @@
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$color-primario: #66275a;
+$color-secundario: #fff;
+$color-texto: #000;
+$color-contraste: rgb(246, 164, 40);
+
+$color-fondo: color.scale($color-primario, $lightness: 30%);
+
+
+$mqMinWidthTablet: 640px;
+$mqMinWidthDesktop: 960px;
+
+$tamanyo-encabezado: 2rem;
+
+
+$main: $color-fondo;

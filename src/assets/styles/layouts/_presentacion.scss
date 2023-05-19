@@ -1,0 +1,24 @@
+.cita {
+  margin-bottom: 2rem;
+}
+
+.parrafo-cita {
+  text-align: left;
+  padding-left: 2.4rem;
+  padding-right: 2rem;
+  line-height: 1.3;
+  margin-bottom: 1.2rem;
+
+  font-family: $font-family-serif;
+  font-style: italic;
+}
+
+.fuente-cita {
+  display: block;
+  text-align: right;
+  padding-right: 2rem;
+
+  @media (min-width: $mqMinWidthTablet) {
+    padding-right: 4rem;
+  }
+}

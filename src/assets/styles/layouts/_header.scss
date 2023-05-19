@@ -1,0 +1,31 @@
+.cabecera {
+  width: 100%;
+  background-color: $color-primario;
+
+
+  @media (min-width: $mqMinWidthDesktop) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.contenedor-header {
+  @extend %contenedor;
+}
+
+.lista-enlaces-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.enlace-header {
+  @extend %enlace;
+
+  font-size: 1.2rem;
+  color: $color-secundario;
+}
+
+.imagen-escudo {
+  height: 30px;
+}

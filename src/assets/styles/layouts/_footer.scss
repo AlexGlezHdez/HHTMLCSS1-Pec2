@@ -1,0 +1,17 @@
+.pie {
+  width: 100%;
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  color: $color-secundario;
+  background-color: $color-primario;
+
+
+  @media (min-width: $mqMinWidthDesktop) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.contenedor-pie {
+  @extend %contenedor;
+}

@@ -1,0 +1,35 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+// Reset de propiedades
+@import "reset";
+
+// Variables
+@import "variables";
+
+// Estilos de SplideJS
+@import "npm:@splidejs/splide/src/css/themes/sea-green";
+
+ /**
+  * Import layouts
+  * It's a best practice to use a different partial for each page
+  */
+
+ // ficheros comunes
+@import "layouts/common";
+@import "layouts/header";
+@import "layouts/main";
+@import "layouts/footer";
+
+// Estilos propios de cada pagina
+@import "layouts/index";
+@import "layouts/presentacion";
+@import "layouts/categorias";
+@import "layouts/enlaces";
+
+
+ /**
+  * Do NOT include anything else in this file!
+  */

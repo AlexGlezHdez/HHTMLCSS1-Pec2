@@ -1,0 +1,54 @@
+%contenedor {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+%enlace {
+  color: $color-secundario;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $color-contraste;
+  }
+}
+
+%imagen {
+  width: 100%;
+  object-fit: contain;
+}
+
+
+%multimedia {
+  width: 100%;
+  padding: 10px;
+  margin: {
+    top:0;
+    right: auto;
+    bottom: 1rem;
+    left: auto;
+  }
+}
+
+.enlace {
+  @extend %enlace;
+}
+
+.enlace-contraste {
+  @extend %enlace;
+  color: $color-contraste;
+  &:hover {
+    color: $color-secundario;
+  }
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: $font-family-sans-serif;
+}

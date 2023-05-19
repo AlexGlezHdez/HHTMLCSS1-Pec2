@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <include src="./views/head.html" locals='{ "titulo": "Cultura rural: Valdegeña - Categorías"}'></include>
+  <body>
+    <include src="./views/header.html" locals='{ "class": "-fondo" }'></include>
+
+    <main class="contenedor-main">
+      <article>
+        <h2 class="titular-seccion">Categorías</h2>
+
+        <ul class="listado-categorias">
+          <li class="categoria">
+            <h3 class="titulo-categoria">Datos sobre Valdegeña</h3>
+            <ul class="listado-subcategorias">
+              <li class="subcategoria">
+                <span class="boliche"></span
+                ><a href="./geografia.html" class="enlace-subcategoria">Un poco de geografía</a>
+              </li>
+              <li class="subcategoria">
+                <span class="boliche"></span><a href="./cultura.html" class="enlace-subcategoria">La cultura local</a>
+              </li>
+            </ul>
+          </li>
+          <li class="categoria">
+            <h3 class="titulo-categoria">Figuras destacadas</h3>
+            <ul class="listado-subcategorias">
+              <li class="subcategoria">
+                <span class="boliche"></span
+                ><a href="avelino.html" class="enlace-subcategoria">Avelino Hernández Lucas</a>
+              </li>
+              <li class="subcategoria">
+                <span class="boliche"></span
+                ><a href="moises-isidro.html" class="enlace-subcategoria">Moises e Isidro: Se veía venir</a>
+              </li>
+            </ul>
+          </li>
+          <li class="categoria">
+            <h3 class="titulo-categoria">Valdegeña en internet</h3>
+            <ul class="listado-subcategorias">
+              <li class="subcategoria">
+                <span class="boliche"></span
+                ><a href="galeria-imagenes.html" class="enlace-subcategoria">Galería de imágenes</a>
+              </li>
+              <li class="subcategoria">
+                <span class="boliche"></span
+                ><a href="galeria-videos.html" class="enlace-subcategoria">Galería de vídeos</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
