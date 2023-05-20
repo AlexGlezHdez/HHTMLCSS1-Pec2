@@ -15,3 +15,29 @@
 .contenedor-pie {
   @extend %contenedor;
 }
+
+.contenedor-enlaces {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lista-enlaces-pie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+
+  @media (min-width: $mqMinWidthTablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3em;
+  }
+}
+
+.enlace-pie {
+  @extend %enlace;
+
+  font-size: 1.2rem;
+  color: $color-secundario;
+}
