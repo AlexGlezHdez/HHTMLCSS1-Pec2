@@ -35,7 +35,17 @@
             enemigos que pretenden arrasar con la vida que allí queda.
           </p>
           <figure class="multimedia-mediana">
-            <img src="/src/assets/images/foto_03.jpg" alt="Foto del pueblo desde la carretera" class="imagen-texto" />
+            <img
+              srcset="
+                /src/assets/images/foto_03-480w.webp 480w,
+                /src/assets/images/foto_03-600w.webp 600w,
+                /src/assets/images/foto_03-800w.webp 800w
+              "
+              sizes="(max-width: 600px) 480px, (max-with: 800px) 600px, 800px"
+              src="/src/assets/images/foto_03-800w.jpg"
+              alt="Foto del pueblo desde la carretera"
+              class="imagen-texto"
+            />
             <figcaption class="etiqueta-multimedia">
               El pueblo desde la cruz -
               <a href="https://www.verpueblos.com/castilla+y+leon/soria/valdegena/foto/295608/" class="enlace-fuente"
@@ -56,12 +66,12 @@
           <figure class="multimedia-mediana">
             <img
               srcset="
-                /src/assets/images/foto_02-480w.jpg 480w,
-                /src/assets/images/foto_03-600w.jpg 600w,
-                /src/assets/images/foto_02-800w.jpg 800w
+                /src/assets/images/foto_02-480w.webp 480w,
+                /src/assets/images/foto_02-600w.webp 600w,
+                /src/assets/images/foto_02-800w.webp 800w
               "
-              sizes="(max-with: 532px) 480px, (max-with: 684px) 600px, 800px"
-              src="/src/assets/images/foto_02.jpg"
+              sizes="(max-width: 600px) 480px, (max-with: 800px) 600px, 800px"
+              src="/src/assets/images/foto_02-800w.jpg"
               alt="Vista aérea de Valdegeña"
               class="imagen-texto"
             />
@@ -74,6 +84,7 @@
               >
             </figcaption>
           </figure>
+
           <p class="parrafo-cita">
             Vas desde el barranco hasta el barrio de la Balsa, pasando por la Plaza Vieja, la Escuela, el frontón, la
             estatua de Silvestrito (tócale la cabeza y aprobarás las mates), el barrio alto, la fuente, el lavadero, la
