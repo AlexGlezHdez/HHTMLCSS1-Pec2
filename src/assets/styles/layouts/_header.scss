@@ -11,6 +11,12 @@
 
 .contenedor-header {
   @extend %contenedor;
+
+  padding: 1rem 0 0 0;
+}
+
+.titulo-header {
+  color: $color-secundario;
 }
 
 .lista-enlaces-header {
@@ -24,8 +30,9 @@
 
   font-size: 1.2rem;
   color: $color-secundario;
+
 }
 
-.imagen-escudo {
-  height: 30px;
+.imagen-skyline {
+  width: 100%;
 }

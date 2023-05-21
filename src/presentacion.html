@@ -54,7 +54,17 @@
             tesoro que nos está robando el tiempo.
           </p>
           <figure class="multimedia-mediana">
-            <img src="/src/assets/images/foto_02.jpg" alt="Vista aérea de Valdegeña" class="imagen-texto" />
+            <img
+              srcset="
+                /src/assets/images/foto_02-480w.jpg 480w,
+                /src/assets/images/foto_03-600w.jpg 600w,
+                /src/assets/images/foto_02-800w.jpg 800w
+              "
+              sizes="(max-with: 532px) 480px, (max-with: 684px) 600px, 800px"
+              src="/src/assets/images/foto_02.jpg"
+              alt="Vista aérea de Valdegeña"
+              class="imagen-texto"
+            />
             <figcaption class="etiqueta-multimedia">
               Vista aérea de Valdegeña -
               <a
