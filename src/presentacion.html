@@ -8,22 +8,13 @@
     <main class="contenedor-main">
       <article>
         <h2 class="titular-seccion">Presentación</h2>
-
-        <figure class="multimedia">
-          <img src="/src/assets/images/foto_01.jpg" alt="Foto de la iglesia de San Lorenzo" class="imagen-texto" />
-          <figcaption class="etiqueta-multimedia">
-            Iglesia de San Lorenzo -
-            <a
-              href="https://www.turismodeobservacion.com/foto/iglesia-de-san-lorenzo-valdegena-soria/76417/"
-              class="enlace-fuente"
-              >Javier González</a
-            >
-          </figcaption>
-        </figure>
         <p class="parrafo">
           Para la presentación de Valdegeña se podría haber usado mucha literatura, pero no hemos encontrado nada más
           adecuado que las palabras de Clara Gonzalo en referencia a su pueblo.
         </p>
+
+        <include src="./assets/images/skyline-completo.svg"></include>
+
         <blockquote class="cita">
           <p class="parrafo-cita">
             Cierro los ojos, paso la última curva del camino y ya lo diviso a lo lejos como si de un espejismo se
@@ -33,6 +24,37 @@
           <p class="parrafo-cita">
             Sus casas, humildes y robustas, son como soldados que erguidos y sin cansarse aguardan a los vientos
             enemigos que pretenden arrasar con la vida que allí queda.
+          </p>
+          <figure class="multimedia-mediana">
+            <img
+              srcset="
+                /src/assets/images/foto_01-480w.webp 480w,
+                /src/assets/images/foto_01-600w.webp 600w,
+                /src/assets/images/foto_01-800w.webp 800w
+              "
+              sizes="(max-width: 600px) 480px, (max-with: 800px) 600px, 800px"
+              src="/src/assets/images/foto_01-800w.jpg"
+              alt="Foto de la iglesia de San Lorenzo"
+              class="imagen-texto"
+            />
+            <figcaption class="etiqueta-multimedia">
+              Iglesia de San Lorenzo -
+              <a
+                href="https://www.turismodeobservacion.com/foto/iglesia-de-san-lorenzo-valdegena-soria/76417/"
+                class="enlace-fuente"
+                >Javier González</a
+              >
+            </figcaption>
+          </figure>
+          <p class="parrafo-cita">
+            El valle del infierno se queda despoblado, y sin un alma por las calles, descubres sus encantos. Ya, sin
+            renacuajos en el pilón y sin vacas en la dehesa, sientes que las cosas están cambiando demasiado rápido.
+          </p>
+          <p class="parrafo-cita">
+            Pero de repente notas su cielo castellano en el que sumergirse es inevitable, el olor tan peculiar al llegar
+            que te trae los recuerdos de la niñez, su misterioso silencio que te embriaga, sus gentes tan sorianas y a
+            la vez tan distintas entre sí y sus costumbres que se desvanecen con el paso de los años, no son más que el
+            tesoro que nos está robando el tiempo.
           </p>
           <figure class="multimedia-mediana">
             <img
@@ -54,15 +76,18 @@
             </figcaption>
           </figure>
           <p class="parrafo-cita">
-            El valle del infierno se queda despoblado, y sin un alma por las calles, descubres sus encantos. Ya, sin
-            renacuajos en el pilón y sin vacas en la dehesa, sientes que las cosas están cambiando demasiado rápido.
+            Vas desde el barranco hasta el barrio de la Balsa, pasando por la Plaza Vieja, la Escuela, el frontón, la
+            estatua de Silvestrito (tócale la cabeza y aprobarás las mates), el barrio alto, la fuente, el lavadero, la
+            era, tu peña, la mía y la fragua, es ahí cuando te das cuenta de que desde lo más alto, su Iglesia vigila
+            tus pasos, su historia se ve en sus muros, y entonces descubres que hay tesoros que aún están inexplorados.
           </p>
           <p class="parrafo-cita">
-            Pero de repente notas su cielo castellano en el que sumergirse es inevitable, el olor tan peculiar al llegar
-            que te trae los recuerdos de la niñez, su misterioso silencio que te embriaga, sus gentes tan sorianas y a
-            la vez tan distintas entre sí y sus costumbres que se desvanecen con el paso de los años, no son más que el
-            tesoro que nos está robando el tiempo.
+            En apenas cuarto de hora te das cuenta de la magia que hay tras los pasos que acabas de dar. Puede que sea
+            el cariño, o tal vez el orgullo de haber pertenecido a su tradición lo que te hace ver Valdegeña como un
+            regalo de los Dioses, pero sin duda los días que se viven allí quedan grabados muy adentro.
           </p>
+          <cite class="fuente-cita">Clara Gonzalo Montesinos</cite>
+
           <figure class="multimedia-mediana">
             <img
               srcset="
@@ -84,19 +109,6 @@
               >
             </figcaption>
           </figure>
-
-          <p class="parrafo-cita">
-            Vas desde el barranco hasta el barrio de la Balsa, pasando por la Plaza Vieja, la Escuela, el frontón, la
-            estatua de Silvestrito (tócale la cabeza y aprobarás las mates), el barrio alto, la fuente, el lavadero, la
-            era, tu peña, la mía y la fragua, es ahí cuando te das cuenta de que desde lo más alto, su Iglesia vigila
-            tus pasos, su historia se ve en sus muros, y entonces descubres que hay tesoros que aún están inexplorados.
-          </p>
-          <p class="parrafo-cita">
-            En apenas cuarto de hora te das cuenta de la magia que hay tras los pasos que acabas de dar. Puede que sea
-            el cariño, o tal vez el orgullo de haber pertenecido a su tradición lo que te hace ver Valdegeña como un
-            regalo de los Dioses, pero sin duda los días que se viven allí quedan grabados muy adentro.
-          </p>
-          <cite class="fuente-cita">Clara Gonzalo Montesinos</cite>
         </blockquote>
       </article>
     </main>
@@ -104,5 +116,6 @@
     <include src="./views/footer.html"></include>
 
     <script type="module" src="./assets/scripts/main.js"></script>
+    <script type="module" src="./assets/scripts/animate-svg.js"></script>
   </body>
 </html>

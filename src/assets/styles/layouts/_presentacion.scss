@@ -22,3 +22,64 @@
     padding-right: 4rem;
   }
 }
+
+@keyframes svg-anim__church {
+  30% {
+     stroke-dashoffset: 0;
+     fill: transparent;
+   }
+   70% {
+     stroke-dashoffset: 0;
+     fill: #000;
+   }
+   100% {
+     stroke-dashoffset: 0;
+     fill: #000;
+   }
+}
+
+@keyframes svg-anim__town {
+  30% {
+     stroke-dashoffset: 0;
+     fill: transparent;
+   }
+   70% {
+     stroke-dashoffset: 0;
+     fill: #704200;
+   }
+   100% {
+     stroke-dashoffset: 0;
+     fill: #704200;
+   }
+}
+
+@keyframes svg-anim__forest {
+  30% {
+     stroke-dashoffset: 0;
+     fill: transparent;
+   }
+   70% {
+     stroke-dashoffset: 0;
+     fill: #006527;
+   }
+   100% {
+     stroke-dashoffset: 0;
+     fill: #006527;
+   }
+  }
+
+.animated-svg{
+  width: 100%;
+}
+
+.svg-animated__church {
+	animation: 1.5s svg-anim__church forwards ease-in-out;
+}
+
+.svg-animated__town {
+	animation: 1.5s svg-anim__town forwards ease-in-out;
+}
+
+.svg-animated__forest {
+	animation: 1.5s svg-anim__forest forwards ease-in-out;
+}

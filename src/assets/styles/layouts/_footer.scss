@@ -16,6 +16,15 @@
   @extend %contenedor;
 }
 
+.logo {
+  width: 200px;
+  fill: $color-secundario;
+}
+
+.enlace-pie:hover .logo {
+  fill: $color-contraste;
+}
+
 .contenedor-enlaces {
   display: flex;
   justify-content: space-around;
