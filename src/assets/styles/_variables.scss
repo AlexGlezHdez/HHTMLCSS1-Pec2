@@ -10,7 +10,8 @@ $color-secundario: #fff;
 $color-texto: #000;
 $color-contraste: rgb(246, 164, 40);
 
-$color-fondo: color.scale($color-primario, $lightness: 30%);
+$color-fondo: color.scale($color-primario, $lightness: 35%);
+$color-fondo-claro: color.scale($color-primario, $lightness: 50%);
 
 
 $mqMinWidthTablet: 640px;

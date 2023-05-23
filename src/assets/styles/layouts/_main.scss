@@ -34,6 +34,10 @@
   max-width: 720px;
 }
 
+.multimedia-destacada {
+  @extend %multimedia;
+}
+
 .wrapper-video {
   position: relative;
   padding-top: 56.25%;
@@ -61,6 +65,13 @@
 
   color: $color-primario;
   font-style: italic;
+}
+
+.imagen-destacada {
+  @extend %imagen;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 3px #000;
 }
 
 .imagen-texto {

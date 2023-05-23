@@ -6,6 +6,8 @@
 
 .categoria {
   text-align: left;
+
+  width: 100%;
 }
 
 .titulo-categoria {
@@ -18,29 +20,42 @@
 .listado-subcategorias {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: start;
   padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 1.2rem;
 }
 
 .subcategoria {
-  line-height: 1.5rem;
-}
-
-.boliche {
-  width: 10px;
-  height: 10px;
-  background-color:$color-primario;
-  display:inline-block;
-  margin-right:10px
+  width: 100%;
 }
 
 .enlace-subcategoria {
   @extend %enlace;
 
-  color: $color-texto;
+  display: flex;
+  align-items: center;
+  color: $color-secundario;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 5px;
+  background-color: $color-fondo-claro;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $color-fondo;
+  }
 }
 
+.boliche {
+  width: 90px;
+  height: 60px;
+  background-color: $color-primario;
+  display: inline-block;
+  margin-right:10px;
+  border-radius: 5px;
+}
 
 .splide {
   padding: {
