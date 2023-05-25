@@ -6,8 +6,32 @@
     <!--
     <include src="./views/header.html"></include>
 -->
-    <img src="assets/images/portada.jpg" class="fondo-portada" />
-    <img src="assets/images/portada2.jpg" class="fondo-portada animada" />
+    <img
+      srcset="
+        /src/assets/images/portada1-480w.webp   480w,
+        /src/assets/images/portada1-600w.webp   600w,
+        /src/assets/images/portada1-800w.webp   800w,
+        /src/assets/images/portada1-1000w.webp 1000w,
+        /src/assets/images/portada1-1280w.webp 1280w
+      "
+      sizes="(max-width: 480px) 480px, (max-with: 600px) 600px, (max-with: 800px) 800px, (max-with: 1000px) 1000px, 1280px"
+      src="/src/assets/images/portada1-1280w.jpg"
+      alt="Foto de la iglesia de San Lorenzo"
+      class="fondo-portada"
+    />
+    <img
+      srcset="
+        /src/assets/images/portada2-480w.webp   480w,
+        /src/assets/images/portada2-600w.webp   600w,
+        /src/assets/images/portada2-800w.webp   800w,
+        /src/assets/images/portada2-1000w.webp 1000w,
+        /src/assets/images/portada2-1280w.webp 1280w
+      "
+      sizes="(max-width: 480px) 480px, (max-with: 600px) 600px, (max-with: 800px) 800px, (max-with: 1000px) 1000px, 1280px"
+      src="/src/assets/images/portada2-1280w.jpg"
+      alt="Foto aerea de Valdegeña nevada"
+      class="fondo-portada animada"
+    />
 
     <main class="contenedor-main">
       <h1><small>Cultura rural:</small>Valdegeña</h1>
