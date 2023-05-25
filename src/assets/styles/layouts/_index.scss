@@ -1,13 +1,3 @@
-.cuerpo_indice {
-//  background-image: url(/src/assets/images/portada.jpg);
-  background-position-x: 40%;
-  background-size: cover;
-}
-
-.cuerpo_indice .cabecera {
-  background-color: unset;
-}
-
 .contenedor-main {
   display: flex;
   flex-direction: column;
@@ -53,5 +43,23 @@ h1 small {
   height: 100vh;
   z-index: -1;
   object-fit: cover;
+}
 
+.animada {
+  clip-path: polygon(0 0, 100% 0,  0 100%, 0 100% );
+
+  animation-name: cambiar-imagen;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+  animation-direction: forward;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes cambiar-imagen {
+  0% {clip-path: polygon(0 0, 0 0,  -10% 100%, -10% 100% );}
+  45% {clip-path: polygon(0 0, 0 0,  -10% 100%, -10% 100% );}
+  50% {clip-path: polygon(0 0, 110% 0,  100% 100%, 0 100% );}
+  95% {clip-path: polygon(0 0, 110% 0,  100% 100%, 0 100% );}
+  100% {clip-path: polygon(110% 0, 110% 0,  100% 100%, 100% 100% );}
 }
