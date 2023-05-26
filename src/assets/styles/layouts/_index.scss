@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-titular-indice {
+.titular-indice {
   font-size: 4rem;
   color: $color-secundario;
   font-family: $font-family-acme;
@@ -14,7 +14,7 @@ titular-indice {
   text-shadow: 2px 2px 8px $color-primario;
 }
 
-titular-indice small {
+.titular-indice small {
   font-size: 1.8rem;
   display: block;
   margin-bottom: 0.75rem;
